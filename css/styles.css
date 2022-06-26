@@ -1,0 +1,111 @@
+:root{
+    /*Colores*/
+    --mainColor:rgb(13, 177, 54);
+    --secColor:#fff;
+    --mainFColor:#fff;
+    --secFcolor:rgb(0, 0, 0);
+
+
+    /*Fuentes*/
+    --mainFont:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    /*Medidas*/
+    --mainFontSize:20px;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+
+}
+
+/* header */
+.fondo{
+    background-image: url(../img/paisaje.jpg);
+    height:500px;
+    background-size: cover;
+}
+.fondo p{
+    color:var(--mainFColor);
+    font-size: 50px;
+    margin: 0px 20px 20px 20px;
+}
+
+/*menu de navegacion*/
+.navegacion{
+    background: #fff;
+    width: 100%;
+    margin: 30px auto;
+    display: block;
+}
+.navegacion ul{
+    list-style: none;
+
+}
+.menu >li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 15px;
+}
+
+.menu > li > a:hover{
+    background: var(--mainColor);
+    color: #fff;
+}
+.submenu {
+    position: absolute;
+    visibility: hidden;
+    width: 120%;
+    background: rgba(255, 255, 255, 0.678);
+}
+.submenu > li > a{
+    display: block;
+    padding: 15px 15px;
+}
+.submenu > li > a:hover{
+    background: var(--mainColor);
+    color: #fff;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* main */
+h1{
+    font-size: 40px;
+}
+ .main{
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    font-size: var(--mainFontSize);
+    line-height: 35px;
+    text-align: justify;
+}
+.main img{
+    width: 300px;
+}
+
+/*footer*/
+footer{
+    margin: 0;
+    padding: 40px;
+    background: #000;
+    width: 100%;
+    color: var(--mainFColor);
+    text-align: center;
+}
